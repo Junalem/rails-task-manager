@@ -1,0 +1,12 @@
+<div class="container m-3">
+  <h1>List of your tasks for today:</h1>
+  <ul>
+    <% @tasks.each do |task| %>
+      <li><%= link_to task.title, task_path(task) %></li>
+      <%= link_to task_path(task), data: { turbo_method: 'delete', turbo_confirm: "Are you sure?" }, class: 'btn btn-light' do %>
+        <i class="fa-solid fa-trash"></i>
+      <% end %>
+    <% end %>
+  </ul>
+  <%# <%= link_to 'Create New', task_path(@task) %>
+</div>
