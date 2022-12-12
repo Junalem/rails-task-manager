@@ -6,8 +6,8 @@ Simple task manager with list of your goals. You can ad new goal, edit old one, 
 Build front and backend. It's designed with Ruby on Rails
 
 <div class="d-flex">
-  <img width="405" alt="image" src="https://user-images.githubusercontent.com/114731843/207062095-98f8b12a-57f6-4ee5-9ce4-2981cf09fc58.png">
-  <img width="405" alt="image" src="https://user-images.githubusercontent.com/114731843/207061917-26c16814-9937-45ca-9666-f9c19222fb08.png">
+  <img width="410" alt="image" src="https://user-images.githubusercontent.com/114731843/207062095-98f8b12a-57f6-4ee5-9ce4-2981cf09fc58.png">
+  <img width="410" alt="image" src="https://user-images.githubusercontent.com/114731843/207061917-26c16814-9937-45ca-9666-f9c19222fb08.png">
 </div>
     <img width="1400" alt="image" src="https://user-images.githubusercontent.com/114731843/207060186-1b4dd225-af04-4761-9d02-e0f8a09a010a.png">
  
