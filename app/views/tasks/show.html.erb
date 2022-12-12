@@ -1,6 +1,9 @@
 <div class="container">
-<h1> <%= @task.title %> </h1>
-<p> <%=  @task.details %> </p>
-<p><%= link_to 'Home', tasks_path, class: 'btn btn-light' %>
-<p><%= link_to 'edit', edit_task_path, class: 'btn btn-light' %>
-</div>
+  <h1 class="mt-3"> <%= @task.title %> </h1>
+  <p class="m-3"> <%=  @task.details %> </p>
+  <div class="d-flex">
+    <p><%= link_to 'Home', tasks_path, class: 'btn btn-info m-3' %>
+      <p>
+        <%= link_to 'Edit', edit_task_path, class: 'btn btn-info m-3' %>
+      </div>
+    </div>

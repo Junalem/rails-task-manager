@@ -1,12 +1,24 @@
 <div class="container m-3">
-  <h1>List of your tasks for today:</h1>
-  <ul>
+  <h1 class="mt-3">Your SMART goals for today:</h1>
+  <div class="row">
     <% @tasks.each do |task| %>
-      <li><%= link_to task.title, task_path(task) %></li>
-      <%= link_to task_path(task), data: { turbo_method: 'delete', turbo_confirm: "Are you sure?" }, class: 'btn btn-light' do %>
-        <i class="fa-solid fa-trash"></i>
-      <% end %>
+      <div class="form-check d-flex align-items-center col-2 ms-5" >
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label d-flex align-items-center" for="flexCheckDefault">
+          <h6 class="ms-3 pt-2 title">
+            <%= link_to task.title, task_path(task) %>
+          </h6>
+          <p class="ms-3 pt-3 delete">
+            <%= link_to task_path(task), data: { turbo_method: 'delete', turbo_confirm: "Are you sure?" }, class: 'btn btn-light' do %>
+              <i class="fa-solid fa-trash"></i>
+            <% end %>
+          </p>
+        </label>
+      </div>
     <% end %>
-  </ul>
-  <%# <%= link_to 'Create New', task_path(@task) %>
+  </div>
+  <%# <%= link_to '➕ Add new task', task_path(@task) %>
+  <div class="create-task-form">
+    <%= render 'tasks/form' %>
+  </div>
 </div>

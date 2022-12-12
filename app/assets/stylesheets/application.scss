@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("https://blog.airtable.com/content/images/2022/02/post-it-inline.jpg");
+}
+
+.title a {
+  text-decoration: none !important;
+  color: #000000 !important;
+  text-shadow: 1px 1px 0px #ffffff;
+  font-family: 'Lobster', cursive;
+}
+.delete  a {
+  text-decoration: none !important;
+  color: #000000 !important;
+  background: none;
+  border: none;
+}
+h1 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+
+label, .btn {
+  font-family: 'Dancing Script', cursive;
+}
+
+form {
+width: 40%;
+}

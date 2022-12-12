@@ -21,7 +21,7 @@ RSpec.describe Task, type: :model do
 
   describe '#truncate_details' do
     it "should be 15 characters" do
-      expect(task.truncate_details).to eq('To many words i')
+      expect(task.truncate_details).to eq("To many words i")
     end
   end
 end
