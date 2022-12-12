@@ -32,11 +32,11 @@ class TasksController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
-
   end
 
   def destroy
     @task = Task.find(params[:id])
+    raise
     @task.destroy
     redirect_to tasks_path, status: :see_other
   end
