@@ -3,5 +3,5 @@ class Task < ApplicationRecord
 end
 
 def truncate_details
-  "#{details[0..15]}"
+  @details[0..15]
 end
